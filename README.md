@@ -1,5 +1,8 @@
 # lexml-vocabulary
 
+&nbsp; [![goodtables.io](https://goodtables.io/badge/github/okfn-brasil/lexml-vocabulary.svg)](https://goodtables.io/github/okfn-brasil/lexml-vocabulary)
+ &nbsp;&nbsp;&nbsp; [![](https://upload.wikimedia.org/wikipedia/commons/e/eb/PICOL_icon_View.svg)](http://data.okfn.org/tools/view?url=https%3A%2F%2Fraw.githubusercontent.com%2Fokfn-brasil%2Flexml-vocabulary%2Fmaster%2Fdatapackage.json)
+
 Vocabulários do [LexML Brasil](https://pt.wikipedia.org/wiki/LexML_Brasil), apresentados na [Parte 6 das normas LexML](http://projeto.lexml.gov.br/documentacao/Parte-6-Vocabularios-Controlados.pdf),  utilizados na [URL LEX](https://en.wikipedia.org/wiki/Lex_(URN)) ([Parte 2](http://projeto.lexml.gov.br/documentacao/Parte-2-LexML-URN.pdf)) e também disponíveis como referência para títulos nos Diários Oficiais do governo brasileiro.
 
 Na ausência de um comitê formal previsto pela seção 1.1 das normas LexML, o presente repositório *git*, seus mantenedores e sua comunidade assumem parcialmente os compromissos do "Comitê Central para a Atribuição de Nomes" do LexML.
