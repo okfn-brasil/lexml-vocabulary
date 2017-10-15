@@ -43,7 +43,7 @@ wget  http://www.lexml.gov.br/vocabulario/tipoConteudo.rdf.xml
 wget  http://www.lexml.gov.br/vocabulario/tipoDocumento.rdf.xml 
 ```
 
-Ela está registrada no *commit* [ffb7df3e97431c036306497540fd2b8dafc6c66c](https://github.com/okfn-brasil/lexml-vocabulary/tree/ffb7df3e97431c036306497540fd2b8dafc6c66c/data/RDF-v1) da pasta `/data/RDF-v1`, e corresponde justamente à "versão 1.0" do vocabulário.
+Ela está registrada no *commit* [ffb7df3e97431c036306497540fd2b8dafc6c66c](https://github.com/okfn-brasil/lexml-vocabulary/tree/ffb7df3e97431c036306497540fd2b8dafc6c66c/data/RDF-v1) da pasta `/data/RDF-v1`.
 
 
 Em seguida foi realizada a normalização dos arquivos XML via *xml2xcleaned*, e a geração de *checksum*:
@@ -60,20 +60,21 @@ sha3sum -a 256 *.* | grep -v sha3-256sum > sha3-256sum.txt
 cd ../..
 ```
 
-As alterações do commit "65ac544a8c480d84e880d382ccc77cf947c142ea", [conforme `git diff -w`](https://github.com/okfn-brasil/lexml-vocabulary/commit/65ac544a8c480d84e880d382ccc77cf947c142ea), podem ser rastreadas: consistem apenas de apenas espaçamento e ordem dos atributos é afetada.
+As alterações do commit "65ac544a8c480d84e880d382ccc77cf947c142ea", [conforme `git diff -w`](https://github.com/okfn-brasil/lexml-vocabulary/commit/65ac544a8c480d84e880d382ccc77cf947c142ea), podem ser rastreadas:  foram afetados apenas o espaçamento dos elementos e a ordem dos atributos. Está  é a "versão 1.0" do vocabulário.
 
 ## Preparo dos arquivos CSV
 
 Arquivos CSV obtidos dos originais (v1):
 ```sh
- php src/vocLexMLRdf2csv.php data/RDF-v1/autoridade.rdf.xml    > data/autoridade-v1.csv
- php src/vocLexMLRdf2csv.php data/RDF-v1/localidade.rdf.xml    > data/localidade-v1.csv
- php src/vocLexMLRdf2csv.php data/RDF-v1/tipoDocumento.rdf.xml > data/tipoDocumento-v1.csv
+ php src/vocLexMLRdf2csv.php c data/RDF-v1/autoridade.rdf.xml    > data/autoridade-v1.csv
+ php src/vocLexMLRdf2csv.php c data/RDF-v1/localidade.rdf.xml    > data/localidade-v1.csv
+ php src/vocLexMLRdf2csv.php c data/RDF-v1/tipoDocumento.rdf.xml > data/tipoDocumento-v1.csv
 ```
 
-Depois desta primeira versão, as atualizações (novos *commits*) correspondem às modificações de manutenção ou revisão previstas pelo projeto. Uma versão de planilha mais amigável é oferecida na interface de planilha colaborativa, ver link no inicio deste documento.
+A primeira versão foi gerada no commit "138f1b1b7ef839aa0910575ffef2a3167cbec7f1".
+Depois desta primeira versão das planilhas, as atualizações (novos *commits*) correspondem às modificações de manutenção ou revisão previstas pelo projeto. Uma versão de planilha mais amigável é oferecida na interface de planilha colaborativa, ver link no inicio deste documento.
 
 Os arquivos CSV são posteriormente transformados ou integrados aos arquivos XML RDF, consolidando a versão final de produção dos vocabulários.
 
-
+PS: os arquivos CSV e seu descritor podem ser validados localmente com `goodtables datapackage.json`. Duplicações por exemplo de autoridade devem ser removidas.
 

@@ -10,6 +10,8 @@ disponíveis em nas pastas [/data/RDF-v*](data) do presente repositório, com pr
 
 ## Versão corrente dos vocabulários
 
+Ver [tag de versão mais atual do *git*](https://github.com/okfn-brasil/lexml-vocabulary/releases).
+
 Atualmente, outubro de 2017, a versão corrente dos arquivos se encontra em [/data/RDF-v1](data/RDF-v1). Seu formato foi inspirado inspirado no [padrão RDA](https://en.wikipedia.org/wiki/Resource_Description_and_Access).
 
 
