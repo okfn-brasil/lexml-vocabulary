@@ -15,7 +15,7 @@ disponíveis em nas pastas [/data/RDF-v*](data) do presente repositório, com pr
 
 Ver [tag de versão mais atual do *git*](https://github.com/okfn-brasil/lexml-vocabulary/releases).
 
-Atualmente, outubro de 2017, a versão corrente dos arquivos se encontra em [/data/RDF-v1](data/RDF-v1). Seu formato foi inspirado inspirado no [padrão RDA](https://en.wikipedia.org/wiki/Resource_Description_and_Access).
+Atualmente, outubro de 2017, a versão corrente dos arquivos se encontra em [/data/RDF-v1](data/RDF-v1). Seu formato foi inspirado no [padrão RDA](https://en.wikipedia.org/wiki/Resource_Description_and_Access).
 
 
 ## Planejamento e objetivos das versões
@@ -34,7 +34,7 @@ A partir da versão 1.2 o presente repositório também seria ofereceria dois co
 
 ## Organização do repositório
 
-* Dados: pasta [/data](data) com descritores padrão [*FrictionLess Data*](http://frictionlessdata.io/)
+* Dados: pasta [/data](data) com descritores padrão [*FrictionLess Data*](http://frictionlessdata.io/) (ver [datapackage.json](datapackage.json)).
 
 * Documentação: este README e documentos de [/docs](docs),
    * [Preparo dos dados](docs/preparo.md)
@@ -42,4 +42,3 @@ A partir da versão 1.2 o presente repositório também seria ofereceria dois co
    * [Preparo das instâncias](docs/instancias.md)
 
 * Algoritmos e implemetações: pasta [/src](src) com os códigos-fonte dos algoritmos de preparo e processamento utilizados no projeto.
-

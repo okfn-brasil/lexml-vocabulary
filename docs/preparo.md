@@ -21,12 +21,13 @@ Para fins de **[preservação de longo prazo](https://en.wikipedia.org/wiki/Digi
 ```sh
 sha3sum -a 256 *.* | grep -v sha3-256sum > sha3-256sum.txt
 ```
+A garantia de autenticidade dos arquivos é reforçada pelo testemunho dos usuários, dos *commiters* e pelo acesso às versões.
 
-## Proveniência
+### Proveniência
 
-A garantia de autenticidade dos arquivos é reforçada pelo testemunho dos usuários e o acesso às versões. Alguns processos de preparo levam em consideração a [auditoria de *commits*](https://en.wikipedia.org/wiki/Commit_(version_control)) específicos que comprovam ambos, a preservação do original e algum processo simples de conversão rastreável. 
+Alguns processos de preparo levam em consideração a [auditoria de *commits*](https://en.wikipedia.org/wiki/Commit_(version_control)) específicos, relativos ao processamento automático de transformação dos dados sem perda conteúdo original, garantindo a sua não-adulteração pelo processo. Vide por exemplo o uso do algortimo *xml2xcleaned*.
 
-Esses *commits* são explicitamente indicados na seção "Preparo inicial" do presente documento de descrição do preparo dos dados.
+Esses *commits* são explicitamente indicados na seção "Preparo inicial" do presente documento de descrição do preparo dos dados. 
 
 ## Preparo inicial
 
@@ -76,5 +77,14 @@ Depois desta primeira versão das planilhas, as atualizações (novos *commits*)
 
 Os arquivos CSV são posteriormente transformados ou integrados aos arquivos XML RDF, consolidando a versão final de produção dos vocabulários.
 
-PS: os arquivos CSV e seu descritor podem ser validados localmente com `goodtables datapackage.json`. Duplicações por exemplo de autoridade devem ser removidas.
+PS: os arquivos CSV e seu descritor podem ser validados localmente com `goodtables datapackage.json`. Duplicações por exemplo de *autoridade* devem ser removidas.
+
+### Manutenção e revisão
+
+Cada processo de manutenção ou revisão requer seu próprio documento. Ver:
+
+* (em construção) [Preparo da v1.1](preparo_v1.1.md)
+
+* (futuro) [Preparo da v1.2](preparo_v1.2.md)
+
 
