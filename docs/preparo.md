@@ -14,16 +14,18 @@ O preparo inicial e conversões se baseiam em algoritmos gerais de processamento
 
 ### Preservação digital
 
-Por se tratar de um repositório público com controle de versões, em particular por se tratar do uso do [sistema *git*](https://en.wikipedia.org/wiki/Git), o presente repositório já vem munido de *checksum* [SHA1](https://en.wikipedia.org/wiki/SHA-1): o que garante a **[integridade física](https://en.wikipedia.org/wiki/Data_integrity#Physical_integrity)** dos arquivos durante as operações cotidianas e, em parte, garante também a sua [autenticidade](https://en.wikipedia.org/wiki/Message_authentication) dos arquivos. 
+Por se tratar de um repositório público com controle de versões, em particular por se tratar do uso do [sistema *git*](https://en.wikipedia.org/wiki/Git), o presente repositório já vem munido de *checksum* [SHA1](https://en.wikipedia.org/wiki/SHA-1): o que garante a **[integridade física](https://en.wikipedia.org/wiki/Data_integrity#Physical_integrity)** dos arquivos durante as operações cotidianas e, em parte, garante também a sua [autenticidade](https://en.wikipedia.org/wiki/Message_authentication). 
 
 Para fins de **[preservação de longo prazo](https://en.wikipedia.org/wiki/Digital_preservation)**, essa mesma garantia pode ser [ampliada se acrescentamos mais uma *hash*](https://crypto.stackexchange.com/a/44281/42893), notadamente [*SHA3 do padrão FIPS 202 de 2015*](https://en.wikipedia.org/wiki/SHA-3). A linha de comando abaixo pode ser utilizada em qualquer sistema Linux para a obtenção do arquivo `sha3-256sum.txt` de todos os demais arquivos de uma pasta:
 
 ```sh
 sha3sum -a 256 *.* | grep -v sha3-256sum > sha3-256sum.txt
 ```
-A garantia de autenticidade dos arquivos é reforçada pelo testemunho dos usuários, dos *commiters* e pelo acesso às versões.
+PS: novamente, por ser git público, a garantia de autenticidade é reforçada pelo endosso dos *commiters* e o testemunho dos usuários.
 
 ### Proveniência
+
+A [proveniência dos dados](https://en.wikipedia.org/wiki/Data_lineage#Data_Provenance) deve ser registrada no presente documento, e ser rastreável no *git*.
 
 Alguns processos de preparo levam em consideração a [auditoria de *commits*](https://en.wikipedia.org/wiki/Commit_(version_control)) específicos, relativos ao processamento automático de transformação dos dados sem perda conteúdo original, garantindo a sua não-adulteração pelo processo. Vide por exemplo o uso do algortimo *xml2xcleaned*.
 

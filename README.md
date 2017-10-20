@@ -8,7 +8,7 @@ Vocabulários do [LexML Brasil](https://pt.wikipedia.org/wiki/LexML_Brasil), apr
 Na ausência de um comitê formal previsto pela seção 1.1 das normas LexML, o presente repositório *git*, seus mantenedores e sua comunidade assumem parcialmente os compromissos do "Comitê Central para a Atribuição de Nomes" do LexML.
 
 Os vocabulários são aqueles definidos nas seções 2 e 3 como "2.1 *Natureza do Conteúdo*" (`tipoConteudo`), "2.2 *Língua*" (`lingua`),  "2.3 *Evento*" (`evento`),  "3.1 *Localidade*" (`localidade`),  "3.2 *Autoridade*" (`autoridade`) e  "3.3 *Tipo de Documento*" (`tipoDocumento`), 
-disponíveis em nas pastas [/data/RDF-v*](data) do presente repositório, com proveniência e autenticidade descritos [nesta documentação](docs/preparo.md).
+disponíveis nas pastas [/data/RDF-v*](data) do presente repositório, com proveniência e autenticidade descritos [nesta documentação](docs/preparo.md).
 
 
 ## Versão corrente dos vocabulários
@@ -31,6 +31,8 @@ A partir da versão 1.2 o presente repositório também seria ofereceria dois co
 * "tabela de sinônimos", desacoplada do vocabulário dos termos canônicos presentes nos arquivos RDF, para garantir que todos os sinônimos ocorridos em dois ou mais documentos oficiais (do próprio acervo LexML ou padrões alternativos como IBGE e ISO) sejam contemplados pelos esquemas da resolução em nomes canônicos.
 
 * "tabela de instâncias", associando prefixos de URNs LEX com respectivos identificadores Wikidata, nos casos com semântica específica diversa ou mais restritiva do que aquela prevista pelas partes.
+
+NOTA: para revisão ténica e organização dos algoritmos de preparo dos *datasets* (representação dos vocabulários como CSV e integração com outros *datasets*) está sendo proposto o uso de [sql-dataset-unifier](https://github.com/datasets-br/sql-unifier).
 
 ## Organização do repositório
 
