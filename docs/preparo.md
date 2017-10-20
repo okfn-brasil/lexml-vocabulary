@@ -33,7 +33,7 @@ Esses *commits* são explicitamente indicados na seção "Preparo inicial" do pr
 
 ## Preparo inicial
 
-Os arquivos da pasta [`/data/RDF-v1`](../data/RDF-v1) são cópias dos **vocabulários originais**, citados pela [Parte 6 do LexML](http://projeto.lexml.gov.br/documentacao/Parte-6-Vocabularios-Controlados.pdf) e acessíveis como arquivos XML RDF em [dadosabertos.senado.leg.br](http://dadosabertos.senado.leg.br/dataset/vocabul-rios-controlados-da-urn-lex), em outubro de 2017.
+Os arquivos da pasta [`/data/RDF-v1.0`](../data/RDF-v1.0) são cópias dos **vocabulários originais**, citados pela [Parte 6 do LexML](http://projeto.lexml.gov.br/documentacao/Parte-6-Vocabularios-Controlados.pdf) e acessíveis como arquivos XML RDF em [dadosabertos.senado.leg.br](http://dadosabertos.senado.leg.br/dataset/vocabul-rios-controlados-da-urn-lex), em outubro de 2017.
 
 A cópia dos originais foi obtida diretamente do download dos arquivos: 
 
@@ -46,19 +46,19 @@ wget  http://www.lexml.gov.br/vocabulario/tipoConteudo.rdf.xml
 wget  http://www.lexml.gov.br/vocabulario/tipoDocumento.rdf.xml 
 ```
 
-Ela está registrada no *commit* [ffb7df3e97431c036306497540fd2b8dafc6c66c](https://github.com/okfn-brasil/lexml-vocabulary/tree/ffb7df3e97431c036306497540fd2b8dafc6c66c/data/RDF-v1) da pasta `/data/RDF-v1`.
+Ela está registrada no *commit* [ffb7df3e97431c036306497540fd2b8dafc6c66c](https://github.com/okfn-brasil/lexml-vocabulary/tree/ffb7df3e97431c036306497540fd2b8dafc6c66c/data/RDF-v1.0) da pasta `/data/RDF-v1.0`.
 
 
 Em seguida foi realizada a normalização dos arquivos XML via *xml2xcleaned*, e a geração de *checksum*:
 
 ```sh
-php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/autoridade.rdf.xml > data/RDF-v1/autoridade.rdf.xml
-php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/evento.rdf.xml > data/RDF-v1/evento.rdf.xml
-php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/lingua.rdf.xml > data/RDF-v1/lingua.rdf.xml
-php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/localidade.rdf.xml > data/RDF-v1/localidade.rdf.xml
-php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/tipoConteudo.rdf.xml > data/RDF-v1/tipoConteudo.rdf.xml
-php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/tipoDocumento.rdf.xml > data/RDF-v1/tipoDocumento.rdf.xml
-cd data/RDF-v1
+php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/autoridade.rdf.xml > data/RDF-v1.0/autoridade.rdf.xml
+php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/evento.rdf.xml > data/RDF-v1.0/evento.rdf.xml
+php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/lingua.rdf.xml > data/RDF-v1.0/lingua.rdf.xml
+php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/localidade.rdf.xml > data/RDF-v1.0/localidade.rdf.xml
+php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/tipoConteudo.rdf.xml > data/RDF-v1.0/tipoConteudo.rdf.xml
+php src/xml2xcleaned.php http://www.lexml.gov.br/vocabulario/tipoDocumento.rdf.xml > data/RDF-v1.0/tipoDocumento.rdf.xml
+cd data/RDF-v1.0
 sha3sum -a 256 *.* | grep -v sha3-256sum > sha3-256sum.txt
 cd ../..
 ```
@@ -69,9 +69,9 @@ As alterações do commit "65ac544a8c480d84e880d382ccc77cf947c142ea", [conforme 
 
 Arquivos CSV obtidos dos originais (v1):
 ```sh
- php src/vocLexMLRdf2csv.php c data/RDF-v1/autoridade.rdf.xml    > data/autoridade-v1.csv
- php src/vocLexMLRdf2csv.php c data/RDF-v1/localidade.rdf.xml    > data/localidade-v1.csv
- php src/vocLexMLRdf2csv.php c data/RDF-v1/tipoDocumento.rdf.xml > data/tipoDocumento-v1.csv
+ php src/vocLexMLRdf2csv.php c data/RDF-v1.0/autoridade.rdf.xml    > data/autoridade-v1.csv
+ php src/vocLexMLRdf2csv.php c data/RDF-v1.0/localidade.rdf.xml    > data/localidade-v1.csv
+ php src/vocLexMLRdf2csv.php c data/RDF-v1.0/tipoDocumento.rdf.xml > data/tipoDocumento-v1.csv
 ```
 
 A primeira versão foi gerada no commit "138f1b1b7ef839aa0910575ffef2a3167cbec7f1".
