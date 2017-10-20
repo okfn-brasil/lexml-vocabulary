@@ -8629,6 +8629,11 @@
     <skos:inScheme rdf:resource="#localidade"/>
     <skos:broader rdf:resource="#br;para"/>
   </skos:Concept>
+  <skos:Concept rdf:about="br;para;mojui.campos" rdf:id="6242">
+    <skos:prefLabel lexml:faceta="Municípios::Mojuí dos Campos - PA" rdf:nodeID="label_15175" xml:lang="pt-BR">Mojuí dos Campos - PA</skos:prefLabel>
+    <skos:inScheme rdf:resource="#localidade"/>
+    <skos:broader rdf:resource="#br;para"/>
+  </skos:Concept>
   <skos:Concept rdf:about="br;para;monte.alegre" rdf:id="2296">
     <skos:prefLabel lexml:faceta="Municípios::Monte Alegre - PA" rdf:nodeID="label_7207" xml:lang="pt-BR">Monte Alegre - PA</skos:prefLabel>
     <skos:inScheme rdf:resource="#localidade"/>
@@ -24716,6 +24721,11 @@
   </skos:Concept>
   <skos:Concept rdf:about="br;santa.catarina;balneario.gaivota" rdf:id="5513">
     <skos:prefLabel lexml:faceta="Municípios::Balneário Gaivota - SC" rdf:nodeID="label_10424" xml:lang="pt-BR">Balneário Gaivota - SC</skos:prefLabel>
+  <skos:Concept rdf:about="br;santa.catarina;balneario.rincao" rdf:id="6243">
+    <skos:prefLabel lexml:faceta="Municípios::Balneário Rincão - SC" rdf:nodeID="label_15176" xml:lang="pt-BR">Balneário Rincão - SC</skos:prefLabel>
+    <skos:inScheme rdf:resource="#localidade"/>
+    <skos:broader rdf:resource="#br;santa.catarina"/>
+  </skos:Concept>
     <skos:inScheme rdf:resource="#localidade"/>
     <skos:broader rdf:resource="#br;santa.catarina"/>
   </skos:Concept>
@@ -25521,6 +25531,11 @@
   </skos:Concept>
   <skos:Concept rdf:about="br;santa.catarina;peritiba" rdf:id="5674">
     <skos:prefLabel lexml:faceta="Municípios::Peritiba - SC" rdf:nodeID="label_10585" xml:lang="pt-BR">Peritiba - SC</skos:prefLabel>
+    <skos:inScheme rdf:resource="#localidade"/>
+    <skos:broader rdf:resource="#br;santa.catarina"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="br;santa.catarina;pescaria.brava" rdf:id="6244">
+    <skos:prefLabel lexml:faceta="Municípios::Pescaria Brava - SC" rdf:nodeID="label_15177" xml:lang="pt-BR">Pescaria Brava - SC</skos:prefLabel>
     <skos:inScheme rdf:resource="#localidade"/>
     <skos:broader rdf:resource="#br;santa.catarina"/>
   </skos:Concept>
