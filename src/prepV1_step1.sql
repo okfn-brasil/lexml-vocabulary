@@ -1,7 +1,11 @@
 --
--- Manutenção do vocabulário de jurisdições, tabela original tmpcsv_localidade
+-- Manutenção do vocabulário de jurisdições (localidade), anãlise e preparo da versão v1.0 
 -- Tabelas de apoio: tmpcsv_br_state_codes, tmpcsv_br_city_codes
 --
+
+
+
+
 
 CREATE VIEW vw_city AS
   SELECT c.*, s.name as state_name, s.lexlabel as state_lexlabel, 

@@ -7,15 +7,14 @@ Vocabulários do [LexML Brasil](https://pt.wikipedia.org/wiki/LexML_Brasil), apr
 
 Na ausência de um comitê formal previsto pela seção 1.1 das normas LexML, o presente repositório *git*, seus mantenedores e sua comunidade assumem parcialmente os compromissos do "Comitê Central para a Atribuição de Nomes" do LexML.
 
-Os vocabulários são aqueles definidos nas seções 2 e 3 como "2.1 *Natureza do Conteúdo*" (`tipoConteudo`), "2.2 *Língua*" (`lingua`),  "2.3 *Evento*" (`evento`),  "3.1 *Localidade*" (`localidade`),  "3.2 *Autoridade*" (`autoridade`) e  "3.3 *Tipo de Documento*" (`tipoDocumento`), 
-disponíveis nas pastas [/data/RDF-v*](data) do presente repositório, com proveniência e autenticidade descritos [nesta documentação](docs/preparo.md).
-
+Os vocabulários são aqueles definidos nas seções 2 e 3 como "2.1 *Natureza do Conteúdo*" (`tipoConteudo`), "2.2 *Língua*" (`lingua`),  "2.3 *Evento*" (`evento`),  "3.1 *Localidade*" (`localidade`),  "3.2 *Autoridade*" (`autoridade`) e  "3.3 *Tipo de Documento*" (`tipoDocumento`),
+disponíveis nas pastas [/data/RDF-v*](data) do presente repositório, com proveniência e autenticidade descritos [nesta documentação](docs/preparo.md). Seu formato foi inspirado no [padrão RDA](https://en.wikipedia.org/wiki/Resource_Description_and_Access) (ver [rdaregistry.info](http://www.rdaregistry.info/)).
 
 ## Versão corrente dos vocabulários
 
 Ver [tag de versão mais atual do *git*](https://github.com/okfn-brasil/lexml-vocabulary/releases).
 
-Atualmente, outubro de 2017, a versão corrente dos arquivos se encontra em [/data/RDF-v1.0](data/RDF-v1.0). Seu formato foi inspirado no [padrão RDA](https://en.wikipedia.org/wiki/Resource_Description_and_Access).
+Atualmente, outubro de 2017, a versão corrente dos arquivos se encontra em [/data/RDF-v1.0](data/RDF-v1.0).
 
 
 ## Planejamento e objetivos das versões
