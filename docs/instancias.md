@@ -20,7 +20,7 @@ O URN LEX é superior a outras formas de indentficação por sua transparência,
 
 * **Tempo**: num diário oficial toda matéria tem sua *data de publicação*, o que garante obrigatoriamente uma referência de tempo.
 
-* **Finalidade**: os diferentes atos das autoridades possuem as mais diferenetes finalidades e, em função da finalidade devem ser expressos como diferentes *tipos de documento*  (ex. contrato, lei, licitação, portaria).
+* **Finalidade**: os diferentes atos das autoridades possuem as mais diferenetes finalidades e graus de relevância. Para dar conta destas diferenças na identificação e na própria redação do conteúdo, resultam em diferentes *tipos de documento*  (por exemplo contratos, leis, licitações, portarias, decretos).
 
 * **Identificação local**: cada autoridade tem a obrigação de, localmente (na sua jurisdição), dar títulos, nomes ou identificadores  consistentes aos documentos que emite (e em seguida publica no diário oficial).  <br/>Na ausência de uma identificação local consistente, o diário oficial assume a responsabilidade de identificar cada uma das  matérias daquela data de publicação.
 
