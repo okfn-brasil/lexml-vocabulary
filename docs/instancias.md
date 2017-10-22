@@ -1,10 +1,12 @@
 # Instâncias semânticas especializadas
 
-Enquanto cada *vocabulário LexML* estabelece uma terminologia controlada com ortografia precisa, mas sem maior precisão no significado do termo (pela sua própria natureza de "termo isoado de contexto"),  a concatenação de dois ou mais termos na URN LEX proporciona o estabelecimento de significados mais precisos, bem como o potencial da realização de estatísticas mais precisas sobre o acervo de codocumentos já acumulados.
+Cada *vocabulário LexML* estabelece uma terminologia controlada com *ortografia* precisa, mas sem maior precisão no *significado* do termo (pela sua própria natureza de "termo isoado de contexto").  Já a concatenação de dois ou mais termos dos vocabulários LexML numa  URN LEX proporciona o estabelecimento de significados mais precisos.
 
-Essa concatenação de dois ou mais termos de diferentes vocabulários na URN LEX resulta em diferentes "instâncias semânticas", que por sua vez proporciona o alinhamento destas instâncias com outros vocabulários.
+Essa concatenação de dois ou mais termos de diferentes vocabulários na URN LEX resulta em diferentes "instâncias semânticas", que por sua vez proporciona o *alinhamento* destas instâncias com outros vocabulários.
 
-## Contexto
+<br/>NOTA: a preocupação da equipe com a obtenção de alinhamentos semânticos consistentes deve seguir critérios estatísticos.  A caracterização da [frequência de uso de prefixos](https://github.com/okfn-brasil/getlex/blob/master/data/urn_prefixos.csv) é fixada pelo [*acervo* de documentos do LexML](http://lexml.gov.br/desc_acervo.html), que faz o papel de [*corpus* linguístico](https://en.wikipedia.org/wiki/Corpus_linguistics) para decisões e homologações estatísticas. Por exemplo, em qualquer município o número de leis é dezenas ou centenas de vezes maior que o número de leis complementares; na Câmara dos Deputados os PLs são por volta de 3 vezes mais frequentes que os PDCs.
+
+## Contexto de uso dos vocabulários LexML
 
 Documentos, como recursos bibliográficos, podem ser identificados de forma única, inclusive por um nome próprio.
 
@@ -20,45 +22,57 @@ O URN LEX é superior a outras formas de indentficação por sua transparência,
 
 * **Finalidade**: os diferentes atos das autoridades possuem as mais diferenetes finalidades e, em função da finalidade devem ser expressos como diferentes *tipos de documento*  (ex. contrato, lei, licitação, portaria).
 
-* **Identificação local**: cada autoridade tem a obrigação de, localmente (na sua jurisdição), dar títulos, nomes ou identificadores  consistentes aos documentos que emite.  <br/>Na ausência de uma identificação local consistente, o diário oficial assume a responsabilidade de identificar cada uma das  matérias daquela data de publicação.
+* **Identificação local**: cada autoridade tem a obrigação de, localmente (na sua jurisdição), dar títulos, nomes ou identificadores  consistentes aos documentos que emite (e em seguida publica no diário oficial).  <br/>Na ausência de uma identificação local consistente, o diário oficial assume a responsabilidade de identificar cada uma das  matérias daquela data de publicação.
 
 A URN LEX é um nome formado desses cinco componentes principais:
 
-> `urn:lex:`JURISDIÇÃO`:`AUTORIDADE`:`TIPO`:`DATA_E_ID_LOCAL
+> `urn:lex:`JURISDIÇÃO`:`AUTORIDADE`:`TIPO`:`DATA`;`ID_LOCAL
 
 Exemplos:
-```
- urn:lex:br:federal:constituicao:1988-10-05;1988
- urn:lex:br:federal:lei:2008-06-19;11705
- urn:lex:br;sao.paulo;campinas:camara.municipal:resolucao:2011-12-14;866
- urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0
-...
-```
+*  [`urn:lex:br:federal:constituicao:1988-10-05;1988`](www.lexml.gov.br/urn/urn:lex:br:federal:constituicao:1988-10-05;1988)
+*  [`urn:lex:br:federal:lei:2008-06-19;11705`](www.lexml.gov.br/urn/urn:lex:br:federal:lei:2008-06-19;11705)
+* [`urn:lex:br;sao.paulo;campinas:camara.municipal:resolucao:2011-12-14;866`](www.lexml.gov.br/urn/urn:lex:br;sao.paulo;campinas:camara.municipal:resolucao:2011-12-14;866)
+* [`urn:lex:br;minas.gerais:assembleia.legislativa:resolucao:2015-12-01;5511`](www.lexml.gov.br/urn/urn:lex:br;minas.gerais:assembleia.legislativa:resolucao:2015-12-01;5511)
+* [`urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0`](www.lexml.gov.br/urn/urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0)
 
-Os prefixos das URNs LEX são fragmentos iniciais da URN. Nos exemplos `urn:lex:br:federal`, `urn:lex:br:federal:lei`, `urn:lex:br;sao.paulo;campinas:camara.municipal`, etc. são prefixos, podendo ser tomados a partir da jurisdição (`br:federal`, `br:federal:lei`, `br;sao.paulo;campinas:camara.municipal`).
+Os prefixos das URNs LEX são fragmentos iniciais da URN. Nos exemplos `urn:lex:br:federal`, `urn:lex:br:federal:lei`, `urn:lex:br;sao.paulo;campinas:camara.municipal`, etc. são prefixos, podendo ser tomados a partir da jurisdição (`br:federal`, `br:federal:lei` ou `br;sao.paulo;campinas:camara.municipal`).
 
 **Prefixos de URN LEX** podem ser melhor caracterizados semanticamente do que os metadados isolados. Fragmentos de `JURISDIÇÃO`:`AUTORIDADE` ou `JURISDIÇÃO`:`AUTORIDADE`:`TIPO` permitem uma caracterização mais precisa, contemplando o [alinhamento do vocabulário LexML com outras ontologias](https://en.wikipedia.org/wiki/Ontology_alignment).
 
+## Exemplos
 
-## Exemplos de instâncias jurisdição-autoridade
+A seguir exemplos de diferenciação semântica por especialização do item de vocabulário (instanciação), ou seja, onde deve-se descartar a semântica fixada pelo vocabulário para usar a semântica própria dada pelo prefixo de URN LEX.
 
-Exemplos de autoridades:
+### Instâncias jurisdição-autoridade
 
-* A Câmara Municipal de Campinas, `br;sao.paulo;campinas:camara.municipal`, tem semântica bem determinada pelo Wikidata-ID [Q10262936](https://www.wikidata.org/wiki/Q102629). É mais bem determinado do que enquanto o termo genérico `camara.municipal` ([Q102629](https://www.wikidata.org/wiki/Q102629)).
+* A Câmara Municipal de Campinas, `br;sao.paulo;campinas:camara.municipal`, tem semântica bem determinada pelo Wikidata-ID [Q10262936](https://www.wikidata.org/wiki/Q102629). <br/>É mais específica do que `camara.municipal`, o termo isolado do vocabulário de autoridades, que tem significado  genérico [Q102629](https://www.wikidata.org/wiki/Q102629).
 
-* A Assembleia do Estado de São Paulo, `br;sao.paulo:assembleia`, tem semântica bem determinada pelo Wikidata-ID [Q4808730](https://www.wikidata.org/wiki/Q4808730).
+* A Assembleia do Estado de São Paulo, `br;sao.paulo:assembleia.legislativa`, com semântica [Q4808730](https://www.wikidata.org/wiki/Q4808730), é  é mais específica que o termo isolado `assembleia.legislativa` ([Q6518196](https://www.wikidata.org/wiki/Q6518196)).
 
-Exemplos de TipoDocumento: ...
+### Instâncias autoridade-tipoDocumento
 
+* O termo genérico "Decreto" (`decreto`) tem significado [Q2571972](https://www.wikidata.org/wiki/Q2571972), insuficiente para determinar a sua precedência no [ordenamento jurídico](https://pt.wikipedia.org/wiki/Ordenamento_jur%C3%ADdico).  Quando contextualizado por uma *autoridade* típica, a precedência fica determinada: `federal:decreto` &gt; `estadual:decreto` &gt; `municipal:decreto`.
 
-## Exemplos de instanciação por período de vigência
+* Um Projeto de Lei  da Câmara dos Deputados (`camara.deputados:projeto.lei;pl`) é abreviado como *PL*, enquanto que o mesmo documento quando chega no Senado Federal recebe um novo identificador, com a designação *PLC*, para reforçar que teve a sua origem na Câmara,  `senado.federal:projeto.lei;plc`. Se a proposição legislativa tem origem no próprio Senado, é designada *PLS* (Projeto de Lei do Senado).
 
-... período de vigência do nome ou da entidade nomeada...
+### Instanciação por período de vigência
 
+Nomes de jurisdições, autoridades, etc. podem mudar, assim como a entidade nomeada pode deixar de existir. Em ambos os casos há um "término na vigência do nome", ou seja, a URN LEX deixa de ser válida. As principais entidades nomeadas, como exemplificado pelas instâncias semânticas, são:
 
-Especialização por períodos ou datas de inicio,  exemplos:
-* o Estado da Guanabra (GB), como jurisdição, só pode ser empregado entre 1960 e 1975.
-* a autoridade Supremo Tribunal Federal (STF) surgiu em 1890 (antes era Supremo Tribunal de Justiça).
+* jurisdições: todas as jurisdições são instâncias bem determinadas.
 
+* jurisdição-autoridade: apesar de algumas autoridades dispensarem a instanciação de jurisdição, a maioria demanda
 
-...
+O período de vigência da **[entidade nomeada](https://en.wikipedia.org/wiki/Named_entity)** pode ser relevante tanto para a validação das URNs LEX como para a determinação precisa da sua semântica (resolução de ambiguidades).  Exemplos com grafia `nome[intervalo]`:
+
+* o Estado da Guanabra (GB), [Q1155409](https://www.wikidata.org/wiki/Q1155409), como jurisdição, só pode ser empregado em URNs LEX com datas entre 1960 e 1975. <br/>`br;guanabara` [1960..1975]
+
+* o Estado de Mato Grosso (MT), [Q42824](https://www.wikidata.org/wiki/Q42824), foi criado em 1748, e, apesar de ter sido desmembrado em 1979 (quando surgiu MS), continua sendo a mesma entidade nomeada, não se considera o seu desmembramento uma recriação da entidade. <br/>`br;mato.grosso` [1748..]
+
+* a autoridade Supremo Tribunal Federal (STF), [Q519138](https://www.wikidata.org/wiki/Q519138), surgiu em 1890, mantendo o mesmo nome até hoje. Antes o seu equivalente era denominado  Supremo Tribunal de Justiça, mas convencionou-se distinguir o STF como nova entidade.<br/>`br:supremo.tribunal.federal` [1890..]
+
+* o município hoje conhecido como Serra Caiada (RN), determinado como  [Q2298053](https://www.wikidata.org/wiki/Q2298053) na Wikidata,  teve os seguintes nomes com respectivas vigências:
+
+   * `br;rn;serra.caiada` [1953-11-24..1962-11-30, 2013-01-14..]
+   * `br;rn;presidente.juscelino` [1963..1963]
+   * `br;rn;presidente.kubitschek` [1964-01-23..2013-01-13]
