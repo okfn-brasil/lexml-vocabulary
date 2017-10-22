@@ -3,7 +3,6 @@
 -- Tabelas de apoio: tmpcsv_br_state_codes, tmpcsv_br_city_codes
 --
 
--- NEWS
 CREATE VIEW dataset.vw_br_state_codes_lex AS
    SELECT 'br;'||lexlabel as urn_jur, subdivision FROM dataset.vw_br_state_codes;
 
@@ -17,7 +16,7 @@ CREATE VIEW dataset.vw_br_city_synonyms_full AS
                  x.urn_jur ||';'|| lib.name2lex(synonym) as urn_jur
   FROM dataset.vw_br_city_synonyms c  INNER JOIN dataset.vw_br_state_codes_lex x
        ON  x.subdivision=c.state
-  -- precisa?  where substr(type,1,3)='alt'
+  WHERE substr(type,1,3)='alt'; -- type IN ('alt canonico','alt oficial') -- exclui abreviações
   ;
 
 CREATE VIEW vwtest_geral_urnlex AS

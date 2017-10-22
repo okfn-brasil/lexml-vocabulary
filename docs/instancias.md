@@ -10,7 +10,7 @@ Essa concatenação de dois ou mais termos de diferentes vocabulários na URN LE
 
 Documentos, como recursos bibliográficos, podem ser identificados de forma única, inclusive por um nome próprio.
 
-O "nome universal do recurso" no contexto LexML, o [URN LEX](https://en.wikipedia.org/wiki/Lex_(URN), é o elemento central dos *padrões LexML*,  garantindo a interoperabilidade e a transparência num sistema que adote esses padrões.  Matérias publicadas por um Diário Oficial  são documentos passíveis de *identificação transparente* por URN LEX.
+O "nome universal do recurso" no contexto LexML, o [URN LEX](https://en.wikipedia.org/wiki/Lex_(URN)), é o elemento central dos *padrões LexML*,  garantindo a interoperabilidade e a transparência num sistema que adote esses padrões.  Matérias publicadas por um Diário Oficial  são documentos passíveis de *identificação transparente* por URN LEX.
 
 O URN LEX é superior a outras formas de indentficação por sua transparência, ou seja, por ser composto de metadados típicos de qualquer matéria do Diário Oficial:
 
@@ -29,11 +29,11 @@ A URN LEX é um nome formado desses cinco componentes principais:
 > `urn:lex:`JURISDIÇÃO`:`AUTORIDADE`:`TIPO`:`DATA`;`ID_LOCAL
 
 Exemplos:
-*  [`urn:lex:br:federal:constituicao:1988-10-05;1988`](www.lexml.gov.br/urn/urn:lex:br:federal:constituicao:1988-10-05;1988)
-*  [`urn:lex:br:federal:lei:2008-06-19;11705`](www.lexml.gov.br/urn/urn:lex:br:federal:lei:2008-06-19;11705)
-* [`urn:lex:br;sao.paulo;campinas:camara.municipal:resolucao:2011-12-14;866`](www.lexml.gov.br/urn/urn:lex:br;sao.paulo;campinas:camara.municipal:resolucao:2011-12-14;866)
-* [`urn:lex:br;minas.gerais:assembleia.legislativa:resolucao:2015-12-01;5511`](www.lexml.gov.br/urn/urn:lex:br;minas.gerais:assembleia.legislativa:resolucao:2015-12-01;5511)
-* [`urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0`](www.lexml.gov.br/urn/urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0)
+*  [`urn:lex:br:federal:constituicao:1988-10-05;1988`](http://www.lexml.gov.br/urn/urn:lex:br:federal:constituicao:1988-10-05;1988)
+*  [`urn:lex:br:federal:lei:2008-06-19;11705`](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2008-06-19;11705)
+* [`urn:lex:br;sao.paulo;campinas:camara.municipal:resolucao:2011-12-14;866`](http://www.lexml.gov.br/urn/urn:lex:br;sao.paulo;campinas:camara.municipal:resolucao:2011-12-14;866)
+* [`urn:lex:br;minas.gerais:assembleia.legislativa:resolucao:2015-12-01;5511`](http://www.lexml.gov.br/urn/urn:lex:br;minas.gerais:assembleia.legislativa:resolucao:2015-12-01;5511)
+* [`urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0`](http://www.lexml.gov.br/urn/urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0)
 
 Os prefixos das URNs LEX são fragmentos iniciais da URN. Nos exemplos `urn:lex:br:federal`, `urn:lex:br:federal:lei`, `urn:lex:br;sao.paulo;campinas:camara.municipal`, etc. são prefixos, podendo ser tomados a partir da jurisdição (`br:federal`, `br:federal:lei` ou `br;sao.paulo;campinas:camara.municipal`).
 
@@ -71,7 +71,7 @@ O período de vigência da **[entidade nomeada](https://en.wikipedia.org/wiki/Na
 
 * a autoridade Supremo Tribunal Federal (STF), [Q519138](https://www.wikidata.org/wiki/Q519138), surgiu em 1890, mantendo o mesmo nome até hoje. Antes o seu equivalente era denominado  Supremo Tribunal de Justiça, mas convencionou-se distinguir o STF como nova entidade.<br/>`br:supremo.tribunal.federal` [1890..]
 
-* o município hoje conhecido como Serra Caiada (RN), determinado como  [Q2298053](https://www.wikidata.org/wiki/Q2298053) na Wikidata,  teve os seguintes nomes com respectivas vigências:
+* o município hoje conhecido como Serra Caiada (RN), determinado como  [Q2298053](https://www.wikidata.org/wiki/Q2298053) na Wikidata, foi criado pela Lei nº 908 de 24 de novembro de 1953, e desde então teve seu nome alterado para "Presidente Juscelino" em 1963,  "Presidente Kubitschek" em 1964, e de volta "Serra Caiada" em 2013.
 
    * `br;rn;serra.caiada` [1953-11-24..1962-11-30, 2013-01-14..]
    * `br;rn;presidente.juscelino` [1963..1963]
