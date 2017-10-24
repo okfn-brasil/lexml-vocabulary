@@ -129,7 +129,7 @@ br;minas.gerais;bras.pires,Brás Pires - MG,,#br;minas.gerais,,Municípios::Brá
 br;minas.gerais;brasilandia.minas,Brasilândia de Minas - MG,,#br;minas.gerais,,Municípios::Brasilândia de Minas - MG
 br;minas.gerais;brasilia.minas,Brasília de Minas - MG,,#br;minas.gerais,,Municípios::Brasília de Minas - MG
 br;minas.gerais;braunas,Braúnas - MG,,#br;minas.gerais,,Municípios::Braúnas - MG
-br;minas.gerais;brasopolis,Brasópolis - MG,,#br;minas.gerais,,Municípios::Brasópolis - MG
+br;minas.gerais;brazopolis,Brazópolis - MG,,#br;minas.gerais,,Municípios::Brazópolis - MG
 br;minas.gerais;brumadinho,Brumadinho - MG,,#br;minas.gerais,,Municípios::Brumadinho - MG
 br;minas.gerais;bueno.brandao,Bueno Brandão - MG,,#br;minas.gerais,,Municípios::Bueno Brandão - MG
 br;minas.gerais;buenopolis,Buenópolis - MG,,#br;minas.gerais,,Municípios::Buenópolis - MG
@@ -1717,6 +1717,7 @@ br;para;medicilandia,Medicilândia - PA,,#br;para,,Municípios::Medicilândia -
 br;para;melgaco,Melgaço - PA,,#br;para,,Municípios::Melgaço - PA
 br;para;mocajuba,Mocajuba - PA,,#br;para,,Municípios::Mocajuba - PA
 br;para;moju,Moju - PA,,#br;para,,Municípios::Moju - PA
+br;para;mojui.campos,Mojuí dos Campos - PA,,#br;para,,Municípios::Mojuí dos Campos - PA
 br;para;monte.alegre,Monte Alegre - PA,,#br;para,,Municípios::Monte Alegre - PA
 br;para;muana,Muaná - PA,,#br;para,,Municípios::Muaná - PA
 br;para;nova.esperanca.piria,Nova Esperança do Piriá - PA,,#br;para,,Municípios::Nova Esperança do Piriá - PA
@@ -1751,7 +1752,7 @@ br;para;salinopolis,Salinópolis - PA,,#br;para,,Municípios::Salinópolis - P
 br;para;salvaterra,Salvaterra - PA,,#br;para,,Municípios::Salvaterra - PA
 br;para;santa.barbara.para,Santa Bárbara do Pará - PA,,#br;para,,Municípios::Santa Bárbara do Pará - PA
 br;para;santa.cruz.arari,Santa Cruz do Arari - PA,,#br;para,,Municípios::Santa Cruz do Arari - PA
-br;para;santa.isabel.para,Santa Isabel do Pará - PA,,#br;para,,Municípios::Santa Isabel do Pará - PA
+br;para;santa.izabel.para,Santa Izabel do Pará - PA,,#br;para,,Municípios::Santa Izabel do Pará - PA
 br;para;santa.luzia.para,Santa Luzia do Pará - PA,,#br;para,,Municípios::Santa Luzia do Pará - PA
 br;para;santa.maria.barreiras,Santa Maria das Barreiras - PA,,#br;para,,Municípios::Santa Maria das Barreiras - PA
 br;para;santa.maria.para,Santa Maria do Pará - PA,,#br;para,,Municípios::Santa Maria do Pará - PA
@@ -2678,7 +2679,7 @@ br;rio.grande.norte;piloes,Pilões - RN,,#br;rio.grande.norte,,Municípios::Pil�
 br;rio.grande.norte;poco.branco,Poço Branco - RN,,#br;rio.grande.norte,,Municípios::Poço Branco - RN
 br;rio.grande.norte;portalegre,Portalegre - RN,,#br;rio.grande.norte,,Municípios::Portalegre - RN
 br;rio.grande.norte;porto.mangue,Porto do Mangue - RN,,#br;rio.grande.norte,,Municípios::Porto do Mangue - RN
-br;rio.grande.norte;presidente.juscelino,Presidente Juscelino - RN,,#br;rio.grande.norte,,Municípios::Presidente Juscelino - RN
+br;rio.grande.norte;serra.caiada,Serra Caiada - RN,,#br;rio.grande.norte,,Municípios::Serra Caiada - RN
 br;rio.grande.norte;pureza,Pureza - RN,,#br;rio.grande.norte,,Municípios::Pureza - RN
 br;rio.grande.norte;rafael.fernandes,Rafael Fernandes - RN,,#br;rio.grande.norte,,Municípios::Rafael Fernandes - RN
 br;rio.grande.norte;rafael.godeiro,Rafael Godeiro - RN,,#br;rio.grande.norte,,Municípios::Rafael Godeiro - RN
@@ -2904,7 +2905,7 @@ br;paraiba;santa.ines,Santa Inês - PB,,#br;paraiba,,Municípios::Santa Inês 
 br;paraiba;santa.luzia,Santa Luzia - PB,,#br;paraiba,,Municípios::Santa Luzia - PB
 br;paraiba;santana.mangueira,Santana de Mangueira - PB,,#br;paraiba,,Municípios::Santana de Mangueira - PB
 br;paraiba;santana.garrotes,Santana dos Garrotes - PB,,#br;paraiba,,Municípios::Santana dos Garrotes - PB
-br;paraiba;santarem,Santarém - PB,,#br;paraiba,,Municípios::Santarém - PB
+br;paraiba;joca.claudino,Joca Claudino - PB,,#br;paraiba,,Municípios::Joca Claudino - PB
 br;paraiba;santa.rita,Santa Rita - PB,,#br;paraiba,,Municípios::Santa Rita - PB
 br;paraiba;santa.teresinha,Santa Teresinha - PB,,#br;paraiba,,Municípios::Santa Teresinha - PB
 br;paraiba;santo.andre,Santo André - PB,,#br;paraiba,,Municípios::Santo André - PB
@@ -2930,7 +2931,7 @@ br;paraiba;sao.miguel.taipu,São Miguel de Taipu - PB,,#br;paraiba,,Municípios:
 br;paraiba;sao.sebastiao.lagoa.roca,São Sebastião de Lagoa de Roça - PB,,#br;paraiba,,Municípios::São Sebastião de Lagoa de Roça - PB
 br;paraiba;sao.sebastiao.umbuzeiro,São Sebastião do Umbuzeiro - PB,,#br;paraiba,,Municípios::São Sebastião do Umbuzeiro - PB
 br;paraiba;sape,Sapé - PB,,#br;paraiba,,Municípios::Sapé - PB
-br;paraiba;serido,Seridó - PB,,#br;paraiba,,Municípios::Seridó - PB
+br;paraiba;sao.vicente.serido,São Vicente do Seridó - PB,,#br;paraiba,,Municípios::São Vicente do Seridó - PB
 br;paraiba;serra.branca,Serra Branca - PB,,#br;paraiba,,Municípios::Serra Branca - PB
 br;paraiba;serra.raiz,Serra da Raiz - PB,,#br;paraiba,,Municípios::Serra da Raiz - PB
 br;paraiba;serra.grande,Serra Grande - PB,,#br;paraiba,,Municípios::Serra Grande - PB
@@ -2943,7 +2944,7 @@ br;paraiba;soledade,Soledade - PB,,#br;paraiba,,Municípios::Soledade - PB
 br;paraiba;sossego,Sossêgo - PB,,#br;paraiba,,Municípios::Sossêgo - PB
 br;paraiba;sousa,Sousa - PB,,#br;paraiba,,Municípios::Sousa - PB
 br;paraiba;sume,Sumé - PB,,#br;paraiba,,Municípios::Sumé - PB
-br;paraiba;campo.santana,Campo de Santana - PB,,#br;paraiba,,Municípios::Campo de Santana - PB
+br;paraiba;tacima,Tacima - PB,,#br;paraiba,,Municípios::Tacima - PB
 br;paraiba;taperoa,Taperoá - PB,,#br;paraiba,,Municípios::Taperoá - PB
 br;paraiba;tavares,Tavares - PB,,#br;paraiba,,Municípios::Tavares - PB
 br;paraiba;teixeira,Teixeira - PB,,#br;paraiba,,Municípios::Teixeira - PB
@@ -3029,7 +3030,7 @@ br;pernambuco;iati,Iati - PE,,#br;pernambuco,,Municípios::Iati - PE
 br;pernambuco;ibimirim,Ibimirim - PE,,#br;pernambuco,,Municípios::Ibimirim - PE
 br;pernambuco;ibirajuba,Ibirajuba - PE,,#br;pernambuco,,Municípios::Ibirajuba - PE
 br;pernambuco;igarassu,Igarassu - PE,,#br;pernambuco,,Municípios::Igarassu - PE
-br;pernambuco;iguaraci,Iguaraci - PE,,#br;pernambuco,,Municípios::Iguaraci - PE
+br;pernambuco;iguaracy,Iguaracy - PE,,#br;pernambuco,,Municípios::Iguaracy - PE
 br;pernambuco;inaja,Inajá - PE,,#br;pernambuco,,Municípios::Inajá - PE
 br;pernambuco;ingazeira,Ingazeira - PE,,#br;pernambuco,,Municípios::Ingazeira - PE
 br;pernambuco;ipojuca,Ipojuca - PE,,#br;pernambuco,,Municípios::Ipojuca - PE
@@ -4221,7 +4222,7 @@ br;sao.paulo;mirassol,Mirassol - SP,,#br;sao.paulo,,Municípios::Mirassol - SP
 br;sao.paulo;mirassolandia,Mirassolândia - SP,,#br;sao.paulo,,Municípios::Mirassolândia - SP
 br;sao.paulo;mogi.cruzes,Mogi das Cruzes - SP,,#br;sao.paulo,,Municípios::Mogi das Cruzes - SP
 br;sao.paulo;mogi.guacu,Mogi Guaçu - SP,,#br;sao.paulo,,Municípios::Mogi Guaçu - SP
-br;sao.paulo;moji.mirim,Moji Mirim - SP,,#br;sao.paulo,,Municípios::Moji Mirim - SP
+br;sao.paulo;mogi.mirim,Mogi Mirim - SP,,#br;sao.paulo,,Municípios::Mogi Mirim - SP
 br;sao.paulo;mombuca,Mombuca - SP,,#br;sao.paulo,,Municípios::Mombuca - SP
 br;sao.paulo;moncoes,Monções - SP,,#br;sao.paulo,,Municípios::Monções - SP
 br;sao.paulo;mongagua,Mongaguá - SP,,#br;sao.paulo,,Municípios::Mongaguá - SP
@@ -4935,6 +4936,7 @@ br;santa.catarina;balneario.arroio.silva,Balneário Arroio do Silva - SC,,#br;sa
 br;santa.catarina;balneario.camboriu,Balneário Camboriú - SC,,#br;santa.catarina,,Municípios::Balneário Camboriú - SC
 br;santa.catarina;balneario.barra.sul,Balneário Barra do Sul - SC,,#br;santa.catarina,,Municípios::Balneário Barra do Sul - SC
 br;santa.catarina;balneario.gaivota,Balneário Gaivota - SC,,#br;santa.catarina,,Municípios::Balneário Gaivota - SC
+br;santa.catarina;balneario.rincao,Balneário Rincão - SC,,#br;santa.catarina,,Municípios::Balneário Rincão - SC
 br;santa.catarina;bandeirante,Bandeirante - SC,,#br;santa.catarina,,Municípios::Bandeirante - SC
 br;santa.catarina;barra.bonita,Barra Bonita - SC,,#br;santa.catarina,,Municípios::Barra Bonita - SC
 br;santa.catarina;barra.velha,Barra Velha - SC,,#br;santa.catarina,,Municípios::Barra Velha - SC
@@ -5096,6 +5098,7 @@ br;santa.catarina;paulo.lopes,Paulo Lopes - SC,,#br;santa.catarina,,Municípios:
 br;santa.catarina;pedras.grandes,Pedras Grandes - SC,,#br;santa.catarina,,Municípios::Pedras Grandes - SC
 br;santa.catarina;penha,Penha - SC,,#br;santa.catarina,,Municípios::Penha - SC
 br;santa.catarina;peritiba,Peritiba - SC,,#br;santa.catarina,,Municípios::Peritiba - SC
+br;santa.catarina;pescaria.brava,Pescaria Brava - SC,,#br;santa.catarina,,Municípios::Pescaria Brava - SC
 br;santa.catarina;petrolandia,Petrolândia - SC,,#br;santa.catarina,,Municípios::Petrolândia - SC
 br;santa.catarina;balneario.picarras,Balneário Piçarras - SC,,#br;santa.catarina,,Municípios::Balneário Piçarras - SC
 br;santa.catarina;pinhalzinho,Pinhalzinho - SC,,#br;santa.catarina,,Municípios::Pinhalzinho - SC
@@ -5373,7 +5376,7 @@ br;mato.grosso;porto.alegre.norte,Porto Alegre do Norte - MT,,#br;mato.grosso,,M
 br;mato.grosso;porto.gauchos,Porto dos Gaúchos - MT,,#br;mato.grosso,,Municípios::Porto dos Gaúchos - MT
 br;mato.grosso;porto.esperidiao,Porto Esperidião - MT,,#br;mato.grosso,,Municípios::Porto Esperidião - MT
 br;mato.grosso;porto.estrela,Porto Estrela - MT,,#br;mato.grosso,,Municípios::Porto Estrela - MT
-br;mato.grosso;poxoreo,Poxoréo - MT,,#br;mato.grosso,,Municípios::Poxoréo - MT
+br;mato.grosso;poxoreu,Poxoréu - MT,,#br;mato.grosso,,Municípios::Poxoréu - MT
 br;mato.grosso;primavera.leste,Primavera do Leste - MT,,#br;mato.grosso,,Municípios::Primavera do Leste - MT
 br;mato.grosso;querencia,Querência - MT,,#br;mato.grosso,,Municípios::Querência - MT
 br;mato.grosso;sao.jose.quatro.marcos,São José dos Quatro Marcos - MT,,#br;mato.grosso,,Municípios::São José dos Quatro Marcos - MT
