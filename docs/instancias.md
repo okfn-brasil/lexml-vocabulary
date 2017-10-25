@@ -1,6 +1,6 @@
 # Instâncias semânticas especializadas
 
-Cada *vocabulário LexML* estabelece uma terminologia controlada com *ortografia* precisa, mas sem maior precisão no *significado* do termo (pela sua própria natureza de "termo isoado de contexto").  Já a concatenação de dois ou mais termos dos vocabulários LexML numa  URN LEX proporciona o estabelecimento de significados mais precisos. <br/>Por exemplo "Assembleia Legislativa" e "Bahia" são termos válidos de vocabulários distintos. Juntos, `br;bahia:assembleia.legislativa`, estabelecem  um significado preciso.
+Cada *vocabulário LexML* estabelece uma terminologia controlada com *ortografia* precisa, mas sem maior precisão no *significado* do termo (pela sua própria natureza de "termo isolado de contexto").  Já a concatenação de dois ou mais termos dos vocabulários LexML numa  URN LEX proporciona o estabelecimento de significados mais precisos. <br/>Por exemplo "Assembleia Legislativa" e "Bahia" são termos válidos de vocabulários distintos. Juntos, `br;bahia:assembleia.legislativa`, estabelecem  um significado preciso.
 
 Esses significados resultantes de concatenações resultam em "instâncias semânticas" dos vocabulários LexML, que por sua vez proporcionam o *alinhamento* destas instâncias com vocabulários externos, tais como a [Wikidata](https://www.wikidata.org).
 
@@ -11,7 +11,7 @@ O "nome universal do recurso" no contexto LexML, é o [URN LEX](https://en.wikip
 
 Os documentos publicados nos diários oficiais são de responsabilidade de quem criou seu conteúdo, a assim-chamada *autoridade emitente* do documento.
 
-O URN LEX faz uso da representação compacta do título do documento: por exemplo se o título é *"Lei nº 11.705 de 19 junho de 2008"* a sua URN LEX conterá `lei:2008-06-19;11705`. Como diferentes autoridades podem adotar os mesmos títulos para seus respectivos documentos, a URN LEX se torna única e não ambpigua por incluir na sua expressão o nome da autoridade emitente. Assim duas autoridades _A1_ e _A2_  podem batizar seus respectivos documentos de `A1:lei:2008-06-19;11705` e `A2:lei:2008-06-19;11705`, com a certeza de não estarem criando conflitos de identificação.
+O URN LEX faz uso da representação compacta do título do documento: por exemplo se o título é *"Lei nº 11.705 de 19 junho de 2008"* a sua URN LEX conterá `lei:2008-06-19;11705`. Como diferentes autoridades podem adotar os mesmos títulos para seus respectivos documentos, a URN LEX se torna única e não ambígua por incluir na sua expressão o nome da autoridade emitente. Assim duas autoridades _A1_ e _A2_  podem batizar seus respectivos documentos de `A1:lei:2008-06-19;11705` e `A2:lei:2008-06-19;11705`, com a certeza de não estarem criando conflitos de identificação.
 
 Matérias publicadas por um Diário Oficial  são documentos passíveis de *identificação transparente* por URN LEX. É um nome composto de partes:
 
@@ -24,17 +24,17 @@ Exemplos:
 * [`urn:lex:br;minas.gerais:assembleia.legislativa:resolucao:2015-12-01;5511`](http://www.lexml.gov.br/urn/urn:lex:br;minas.gerais:assembleia.legislativa:resolucao:2015-12-01;5511)
 * [`urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0`](http://www.lexml.gov.br/urn/urn:lex:br:tribunal.superior.trabalho;turma.4:acordao;rr:2010-12-15;61100-2004-118-8-0)
 
-Há como que uma [cadeia de delegação de responsabilidades](https://medium.com/d/c79aceeb1f03) inerente à hierarquia das partes da URN LEX: cada parte é o nome da entidade resposável pelo batismo da seguinte.
+Há como que uma [cadeia de delegação de responsabilidades](https://medium.com/d/c79aceeb1f03) inerente à hierarquia das partes da URN LEX: cada parte é o nome da entidade responsável pelo batismo da seguinte.
 
-Quem batiza o documento, dando um *ID_LOCAL* a ele, é uma [entidade do governo](http://schema.org/GovernmentOrganization) (ministério, tribunal, prefeitura, subprefeitura, secretaria, câmara, etc.). Esta entidade, por sua vez, é batizado pelo nome `JURISDIÇÃO`:`AUTORIDADE`, que surge da concatenação de valores de dois vcabulários... São ao todo 4 encadeamentos de responsabilidade de batismo:
+Quem batiza o documento, dando um *ID_LOCAL* a ele, é uma [entidade do governo](http://schema.org/GovernmentOrganization) (ministério, tribunal, prefeitura, subprefeitura, secretaria, câmara, etc.). Esta entidade, por sua vez, é batizado pelo nome `JURISDIÇÃO`:`AUTORIDADE`, que surge da concatenação de valores de dois vocabulários... São ao todo 4 encadeamentos de responsabilidade de batismo:
 
-* `urn:lex` é o *namespace*, o padrão que determina a sintaxe e os vocbulários que podem ou nao ser usados, a começar pelas jurisdições.
+* `urn:lex` é o *namespace*, o padrão que determina a sintaxe e os vocabulários que podem ou nao ser usados, a começar pelas jurisdições.
 
 * *JURISDIÇÃO*: local onde certas *AUTORIDADE*s serão reconhecidas e outras não.
 
 * *AUTORIDADE*: entidade que assume a responsabilidade pelo conteúdo publicado, e portanto determina também quais *TIPO*s de documento pode emitir.
 
-* *TIPO*: limita a sintaxe e/ou formas de indentificação (*ID_LOCAL*) dos documentos produzidos pela autoridade.
+* *TIPO*: limita a sintaxe e/ou formas de identificação (*ID_LOCAL*) dos documentos produzidos pela autoridade.
 
 O *ID_LOCAL*, como vimos, faz o papel enfim de [nome](http://schema.org/name) do [documento](http://schema.org/Article), controlado localmente pela autoridade. Conforme o caso (ex. decretos) a DATA pode ou não fazer parte desse nome. Todavia, como a *DATA*  é um metadado que se aplica também à caracterização da *JURISDIÇÃO* e da *AUTORIDADE* &mdash; ou seja, reduz o *namespace*  aos nomes vigentes naquela data &mdash;, então a *DATA* acaba sendo um elemento obrigatório na URN LEX.
 
@@ -70,7 +70,7 @@ Nomes de jurisdições, autoridades, etc. podem mudar, assim como a entidade nom
 
 O período de vigência da **[entidade nomeada](https://en.wikipedia.org/wiki/Named_entity)** pode ser relevante tanto para a validação das URNs LEX como para a determinação precisa da sua semântica (resolução de ambiguidades).  Exemplos com grafia `nome[intervalo]`:
 
-* o Estado da Guanabra (GB), [Q1155409](https://www.wikidata.org/wiki/Q1155409), como jurisdição, só pode ser empregado em URNs LEX com datas entre 1960 e 1975. <br/>`br;guanabara` [1960..1975]
+* o Estado da Guanabara (GB), [Q1155409](https://www.wikidata.org/wiki/Q1155409), como jurisdição, só pode ser empregado em URNs LEX com datas entre 1960 e 1975. <br/>`br;guanabara` [1960..1975]
 
 * o Estado de Mato Grosso (MT), [Q42824](https://www.wikidata.org/wiki/Q42824), foi criado em 1748, e, apesar de ter sido desmembrado em 1979 (quando surgiu MS), continua sendo a mesma entidade nomeada, não se considera o seu desmembramento uma recriação da entidade. <br/>`br;mato.grosso` [1748..]
 
