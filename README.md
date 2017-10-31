@@ -43,9 +43,9 @@ NOTA: para revisão ténica e organização dos algoritmos de preparo dos *datas
 
 ## Licenças
 
-* **Software**: algoritmos e código-fonte de software**,  licença relativa à pasta [`/src`](src), [*MIT*](https://spdx.org/licenses/MIT.html).
+* **Software**: algoritmos e código-fonte de software,  licença relativa à pasta [`/src`](src), [*MIT*](https://spdx.org/licenses/MIT.html).
 
-* **Dados**: arquivos CSV, JSON, XML e demais arquivos de dados**, [*ODbL-1.0*](https://spdx.org/licenses/ODbL-1.0.html)
+* **Dados**: arquivos CSV, JSON, XML e demais arquivos de dados, [*ODbL-1.0*](https://spdx.org/licenses/ODbL-1.0.html)
 
 * **Conteúdo**: documentação, principalmente na pasta [/docs](docs), metodologias e outros, [*CC-BY-4*](https://creativecommons.org/licenses/by/4.0/).
 
