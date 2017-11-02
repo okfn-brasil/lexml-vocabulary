@@ -68,9 +68,9 @@ As alterações do commit "65ac544a8c480d84e880d382ccc77cf947c142ea", [conforme 
 
 Arquivos CSV obtidos dos originais (v1):
 ```sh
- php src/vocLexMLRdf2csv.php c data/RDF-v1.0/autoridade.rdf.xml    > data/autoridade-v1.csv
- php src/vocLexMLRdf2csv.php c data/RDF-v1.0/localidade.rdf.xml    > data/localidade-v1.csv
- php src/vocLexMLRdf2csv.php c data/RDF-v1.0/tipoDocumento.rdf.xml > data/tipoDocumento-v1.csv
+ php src/vocLexMLRdf2csv.php data/RDF-v1.0/autoridade.rdf.xml    > data/autoridade.csv
+ php src/vocLexMLRdf2csv.php data/RDF-v1.0/localidade.rdf.xml    > data/localidade.csv
+ php src/vocLexMLRdf2csv.php data/RDF-v1.0/tipoDocumento.rdf.xml > data/tipoDocumento.csv
 ```
 
 A primeira versão foi gerada no commit "138f1b1b7ef839aa0910575ffef2a3167cbec7f1".

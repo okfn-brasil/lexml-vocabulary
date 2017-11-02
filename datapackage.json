@@ -28,7 +28,7 @@
   },
   "resources": [
     {
-      "name": "autoridade.csv",
+      "name": "autoridade",
       "path": "data/autoridade.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -36,6 +36,12 @@
       "schema": {
         "fields": [
           {
+            "name": "id",
+            "description": "The original RDF's ID. No use, only for duplicates reference.",
+            "type": "integer",
+            "title":"ID"
+          },
+          {
             "name": "about",
             "description": "The URN LEX of the item",
             "type": "string",
@@ -46,6 +52,12 @@
             "description": "preferred label",
             "type": "string",
             "title":"prefLabel"
+          },
+          {
+            "name": "lang",
+            "description": "The language of the preferred label or its title",
+            "type": "string",
+            "title":"Language"
           },
           {
             "name": "altLabel",
@@ -73,10 +85,10 @@
           }
         ]
       },
-      "primaryKey": ["about"]
+      "primaryKey": ["id"]
     },
     {
-      "name": "localidade.csv",
+      "name": "localidade",
       "path": "data/localidade.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -84,6 +96,12 @@
       "schema": {
         "fields": [
           {
+            "name": "id",
+            "description": "The original RDF's ID. No use, only for duplicates reference.",
+            "type": "integer",
+            "title":"ID"
+          },
+          {
             "name": "about",
             "description": "The URN LEX of the item",
             "type": "string",
@@ -94,6 +112,12 @@
             "description": "preferred label",
             "type": "string",
             "title":"prefLabel"
+          },
+          {
+            "name": "lang",
+            "description": "The language of the preferred label or its title",
+            "type": "string",
+            "title":"Language"
           },
           {
             "name": "altLabel",
@@ -121,10 +145,10 @@
           }
         ]
       },
-      "primaryKey": ["about"]
+      "primaryKey": ["id"]
     },
     {
-      "name": "tipoDocumento.csv",
+      "name": "tipodocumento",
       "path": "data/tipoDocumento.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -132,6 +156,12 @@
       "schema": {
         "fields": [
           {
+            "name": "id",
+            "description": "The original RDF's ID. No use, only for duplicates reference.",
+            "type": "integer",
+            "title":"ID"
+          },
+          {
             "name": "about",
             "description": "The URN LEX of the item",
             "type": "string",
@@ -142,6 +172,12 @@
             "description": "preferred label",
             "type": "string",
             "title":"prefLabel"
+          },
+          {
+            "name": "lang",
+            "description": "The language of the preferred label or its title",
+            "type": "string",
+            "title":"Language"
           },
           {
             "name": "altLabel",
@@ -169,8 +205,7 @@
           }
         ]
       },
-      "primaryKey": ["about"]
+      "primaryKey": ["id"]
     }
   ]
 }
-
